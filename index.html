@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon.in</title>
+    <link rel="icon" href="./icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* header started */
+        
+        header {
+            height: 30px;
+            background: #131921;
+            color: white;
+            padding: 5px;
+            display: flex;
+        }
+        /* header left */
+        
+        header .left {
+            display: flex;
+            align-items: center;
+            width: 25%;
+            height: 30px;
+        }
+        
+        .logo {
+            align-items: center;
+            padding-top: 5px;
+            width: 50px;
+        }
+        
+        .logo img {
+            height: 35px;
+        }
+        
+        .logo-location {
+            display: flex;
+            align-items: center;
+            margin-left: 0%;
+            height: 100%;
+            width: 100px;
+        }
+        /* header mid */
+        
+        .mid {
+            width: 48%;
+            display: flex;
+            align-items: center;
+            border-radius: 40px;
+        }
+        
+        header.mid.selecter {
+            display: flex;
+        }
+        
+        select {
+            cursor: pointer;
+        }
+        
+        select:hover {
+            opacity: 0.9;
+        }
+        
+        input {
+            padding: 5px;
+        }
+        
+        i {
+            cursor: pointer;
+        }
+        /* header right */
+        
+        .right {
+            display: flex;
+            align-items: center;
+            visibility: visible;
+            margin-left: 0;
+        }
+        
+        header .right .first:hover {
+            border: 1px solid rgb(238, 233, 233);
+        }
+        
+        .list-lang {
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: 0.25s;
+        }
+        
+        .first:hover .list-lang {
+            visibility: visible;
+            transform: translateY(0px);
+        }
+        
+        header .right .second {
+            padding: 5px;
+        }
+        
+        header .right .second:hover .box-sign {
+            visibility: visible;
+        }
+        
+        header .right .second:hover {
+            border: 1px solid white;
+            padding: 5px;
+        }
+        
+        header .right .second p {
+            font-size: 8px;
+            cursor: pointer;
+        }
+        
+        header .right .second h4 {
+            font-size: 10px;
+            cursor: pointer;
+        }
+        
+        header .right .second .box-sign {
+            min-width: 350px;
+            min-height: 300px;
+            background-color: white;
+            position: absolute;
+            right: 50px;
+            top: 40px;
+            border: 0.5px solid black;
+            box-shadow: 2px 2px 5px rgb(83, 81, 81);
+            visibility: hidden;
+        }
+        
+        header .right .second .box-sign .top {
+            text-align: center;
+            margin: 10px;
+            padding-bottom: 5px;
+            border-bottom: 0.2px solid rgb(106, 103, 103);
+        }
+        
+        header .right .second .box-sign .top button {
+            padding: 3px 40px;
+            border-radius: 5px;
+            background-color: #FFD814;
+            border: none;
+        }
+        
+        header .right .second .box-sign .top span {
+            font-size: 8px;
+            color: black;
+        }
+        
+        header .right .second .box-sign .top a {
+            text-decoration: none;
+            font-size: 8px;
+        }
+        
+        header .right .second .box-sign .bottom {
+            display: flex;
+        }
+        
+        header .right .second .box-sign .bottom .left {
+            font-size: 5px;
+            color: black;
+            display: inline;
+        }
+        
+        header .right .second .box-sign .bottom .left {
+            padding-left: 10px;
+        }
+        
+        header .right .second .box-sign .bottom .left h4 {
+            padding-left: 10px;
+            padding-bottom: 5px;
+        }
+        
+        header .right .second .box-sign .bottom .left ol {
+            padding-left: 10px;
+            text-align: none;
+        }
+        
+        header .right .second .box-sign .bottom .left ol li {
+            padding-bottom: 8px;
+        }
+        
+        header .right .second .box-sign .bottom .left ol li a {
+            text-decoration: none;
+            font-size: 8px;
+            color: black;
+        }
+        
+        header .right .second .box-sign .bottom .right-2 {
+            color: black;
+            display: inline;
+            margin-left: 18px;
+        }
+        
+        header .right .second .box-sign .bottom .right-2 h4 {
+            margin-left: 60px;
+            color: #000;
+        }
+        
+        header .right .second .box-sign .bottom .right-2 li {
+            margin-left: 70px;
+            font-size: 10px;
+        }
+        
+        header .right .second .box-sign .bottom .right-2 li a {
+            font-size: 8px;
+            color: black;
+            text-decoration: none;
+        }
+        
+        header .right .third {
+            padding: 5px;
+        }
+        
+        header .right .third:hover {
+            border: 1px solid #f1eeee;
+        }
+        
+        header .right .third h6 {
+            font-size: 9px;
+        }
+        
+        header .right .third h4 {
+            font-size: 13px;
+        }
+        
+        header .right .four {
+            display: flex;
+            padding: 6px;
+            margin: 5px;
+        }
+        
+        header .right .four:hover {
+            border: 1px solid white;
+        }
+        
+        header .right .four h6 {
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <div class="logo">
+                <img style="    height: 36px; align-items: center;margin-top: 0px; " src="/logo2.jpg" alt="">
+            </div>
+
+            <div class="logo-location" style="  height: 25px; margin-left: 25px;">
+                <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 7px; padding: 3px;padding-top: 5px;"></i>
+                <div style="font-size: 8px;">
+                    <p style="font-style: normal;">Delivering to Pune 411038</p>
+                    <h4>Update location</h4>
+                </div>
+
+            </div>
+        </div>
+        <div class="mid" style="border-radius: 20px;">
+            <div class="selecter" style="width: 100%;display: inline-flex;font-size: smaller;">
+                <select name="option" id="option" style=" width: 59px;font-size:5px; background-color: #D4D4D4;border: none; ">
+                    <option value="1">All categories</option>
+                    <option value="1">Eletronics</option>
+                    <option value="1">cloth</option>
+                    <option value="1">Dry foods</option>  
+                    
+                </select>
+
+                <input type="text" placeholder="Search Amazon.in" style="width: 75%; font-size: 6px;border: none;">
+                <i class="fa fa-search" aria-hidden="true" style="border: none;background: #FEBD69;"></i>
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="first" style="height: 35px;width: 35px;margin-right:19px ;">
+                <H6 style="padding: 12px 14px;">EN</H6>
+                <!-- <i class="fa fa-sort-desc" aria-hidden="true"></i> -->
+                <div class="list-lang" style="height: 120px;width: 75px;background-color: #f3ebeb; color: black;font-size: 8px;
+                box-shadow: 0 2px 2px 0;">
+                    <ul>
+                        <input type="radio" name="hindi" id="Hindi">
+                        <label for="Hindi">Hindi</label>
+                        <br><br>
+
+                        <input type="radio" name="hindi" id="Marathi">
+                        <label for="Marathi">Marathi</label>
+                        <br>
+                        <br>
+
+                        <input type="radio" name="hindi" id="Nepali">
+                        <label for="Nepali">Nepali</label>
+
+                        <br><br>
+                        <input type="radio" name="hindi" id="Telgu">
+                        <label for="Telgu">Telgu</label>
+                        <br><br>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="second">
+                <p>Hello, sign in</p>
+                <h4>Account & List</h4>
+                <div class="box-sign">
+                    <div class="top">
+                        <button> Sign in</button><br>
+                        <span>New Customer?</span>
+                        <a href="http://127.0.0.1:5500/index.html">Start here</a>
+
+
+                    </div>
+                    <div class="bottom">
+
+                        <div class="left">
+                            <h4>Your Lists</h4>
+
+
+                            <ol>
+                                <li> <a href="">Create a Wish List</a></li>
+                                <li> <a href="">Wish from Any Website</a></li>
+                                <li> <a href="">Baby Wishlist</a></li>
+                                <li> <a href="">Discover Your Style</a></li>
+                                <li> <a href="">Explore Showroom</a></li>
+
+
+                            </ol>
+
+                        </div>
+                        <div class="right-2">
+                            <h4>Your Account</h4>
+                            <ol>
+                                <li><a href="">Your Account</a></li>
+                                <li><a href="">Your Orders</a></li>
+                                <li><a href="">Your Wish List</a></li>
+                                <li><a href="">Your Prime Membership</a></li>
+                                <li><a href="">Your Prime Video</a></li>
+                                <li><a href="">Your Subscribe & Save Items</a></li>
+
+
+
+                            </ol>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="third">
+                <h6>Returns</h6>
+                <h4>& Order</h4>
+
+
+            </div>
+            <div class="four">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <h6>Cart</h6>
+            </div>
+        </div>
+        </div>
+    </header>
+</body>
+
+</html>
