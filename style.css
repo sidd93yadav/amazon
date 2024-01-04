@@ -1,0 +1,359 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #E3E6E6 !important;
+}
+
+p {
+    margin: 0px;
+}
+
+
+/* header started */
+
+header {
+    /* height: 30px; */
+    background: #131921;
+    color: white;
+    padding: 5px;
+    display: flex;
+    position: relative;
+}
+
+
+/* header left */
+
+header .left {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    padding: 0;
+    /* height: 30px; */
+}
+
+.logo {
+    align-items: center;
+    padding-top: 5px;
+    width: 50px;
+}
+
+.logo img {
+    /* height: 35px; */
+}
+
+.logo-location {
+    display: flex;
+    align-items: center;
+    margin-left: 0%;
+    /* height: 100%; */
+    width: 112px;
+}
+
+header .left .logo-location div p {
+    font-size: 8px;
+}
+
+header .left .logo-location div h6 {
+    font-size: 12px;
+}
+
+
+/* header mid */
+
+.mid {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+}
+
+header.mid.selecter {
+    display: flex;
+}
+
+select {
+    cursor: pointer;
+}
+
+select:hover {
+    opacity: 0.9;
+}
+
+input {
+    padding: 5px;
+}
+
+i {
+    cursor: pointer;
+}
+
+
+/* header right */
+
+.right {
+    display: flex;
+    align-items: center;
+    visibility: visible;
+    margin-left: 0;
+}
+
+header .right .first:hover {
+    border: 1px solid rgb(238, 233, 233);
+}
+
+.list-lang {
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: 0.25s;
+}
+
+.first:hover .list-lang {
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+header .right .second {
+    padding: 5px;
+}
+
+header .right .second:hover .box-sign {
+    /* visibility: visible; */
+    visibility: initial;
+}
+
+header .right .second:hover {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+header .right .second p {
+    font-size: 8px;
+    cursor: pointer;
+}
+
+header .right .second h4 {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+header .right .second .box-sign {
+    min-width: 350px;
+    min-height: 300px;
+    background-color: white;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    border: 0.5px solid black;
+    box-shadow: 2px 2px 5px rgb(83, 81, 81);
+    visibility: hidden;
+}
+
+header .right .second .box-sign .top {
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: 0.2px solid rgb(106, 103, 103);
+}
+
+header .right .second .box-sign .top button {
+    padding: 3px 40px;
+    border-radius: 5px;
+    background-color: #FFD814;
+    border: none;
+}
+
+header .right .second .box-sign .top span {
+    font-size: 8px;
+    color: black;
+}
+
+header .right .second .box-sign .top a {
+    text-decoration: none;
+    font-size: 8px;
+}
+
+header .right .second .box-sign .bottom {
+    display: flex;
+}
+
+header .right .second .box-sign .bottom .left {
+    font-size: 5px;
+    color: black;
+    display: inline;
+}
+
+header .right .second .box-sign .bottom .left {
+    padding-left: 10px;
+}
+
+header .right .second .box-sign .bottom .left h4 {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+header .right .second .box-sign .bottom .left ol {
+    padding-left: 10px;
+    text-align: none;
+}
+
+header .right .second .box-sign .bottom .left ol li {
+    padding-bottom: 8px;
+}
+
+header .right .second .box-sign .bottom .left ol li a {
+    text-decoration: none;
+    font-size: 8px;
+    color: black;
+}
+
+header .right .second .box-sign .bottom .right-2 {
+    color: black;
+    display: inline;
+    margin-left: 18px;
+}
+
+header .right .second .box-sign .bottom .right-2 h4 {
+    margin-left: 60px;
+    color: #000;
+}
+
+header .right .second .box-sign .bottom .right-2 li {
+    margin-left: 70px;
+    font-size: 10px;
+}
+
+header .right .second .box-sign .bottom .right-2 li a {
+    font-size: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* third */
+
+header .right .third {
+    padding: 3px;
+    margin: 0;
+}
+
+header .right .third:hover {
+    border: 1px solid #f1eeee;
+}
+
+header .right .third h6 {
+    font-size: 6px;
+}
+
+header .right .third h4 {
+    font-size: 13px;
+}
+
+header .right .four {
+    display: flex;
+    padding: 6px;
+    margin: 1px;
+}
+
+header .right .four:hover {
+    border: 1px solid white;
+}
+
+header .right .four h6 {
+    padding-top: 5px;
+}
+
+
+/* main */
+
+main .banner {
+    /* border: 1px solid red; */
+    height: 90vh;
+    position: relative;
+}
+
+main .banner .slide {
+    height: 100%;
+}
+
+main .banner .slide .carousel-inner {
+    height: 100%;
+    background-color: #000;
+}
+
+main .banner .slide .carousel-inner .carousel-item {
+    height: 100%;
+}
+
+main .banner .slide .carousel-inner .carousel-item img {
+    height: 100%;
+}
+
+
+/* button */
+
+main .banner .slide button {
+    /* background: red; */
+    height: 180px;
+    width: 70px;
+}
+
+main .banner .slide button:hover {
+    border: 1px solid white;
+    /* box-shadow: 2px 2px 1px white; */
+    height: 180px;
+    width: 70px;
+}
+
+
+/* -Products Categories */
+
+main .banner .products-categories {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+
+main .banner .products-categories .product-container {
+    width: 98%;
+    margin: 0 10px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+main .banner .products-categories .product-container .item {
+    width: 24%;
+    background: white;
+    padding: 20px 10px;
+}
+
+main .banner .products-categories .product-container .item .products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .banner .products-categories .product-container .item .product {
+    width: 48%;
+    margin-top: 10px;
+}
+
+main .banner .products-categories .product-container .item .product .product-img {
+    width: 100px;
+    height: 60px;
+}
+
+main .banner .products-categories .product-container .item .product .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .banner .products-categories .product-container .item .product p {
+    font-size: 8px;
+    font-weight: 600;
+}
