@@ -104,15 +104,16 @@ header .right .first:hover {
     border: 1px solid rgb(238, 233, 233);
 }
 
-.list-lang {
+header .right .first:hover .list-lang {
+    visibility: visible;
+    transform: translateY(0px);
+    z-index: 1;
+}
+
+header .right .first .list-lang {
     visibility: hidden;
     transform: translateY(15px);
     transition: 0.25s;
-}
-
-.first:hover .list-lang {
-    visibility: visible;
-    transform: translateY(0px);
 }
 
 header .right .second {
@@ -120,8 +121,8 @@ header .right .second {
 }
 
 header .right .second:hover .box-sign {
-    /* visibility: visible; */
-    visibility: initial;
+    visibility: visible;
+    z-index: 10;
 }
 
 header .right .second:hover {
@@ -209,23 +210,23 @@ header .right .second .box-sign .bottom .left ol li a {
     color: black;
 }
 
-header .right .second .box-sign .bottom .right-2 {
+header .right .second .box-sign .bottom .right2 {
     color: black;
     display: inline;
     margin-left: 18px;
 }
 
-header .right .second .box-sign .bottom .right-2 h4 {
+header .right .second .box-sign .bottom .right2 h4 {
     margin-left: 60px;
     color: #000;
 }
 
-header .right .second .box-sign .bottom .right-2 li {
+header .right .second .box-sign .bottom .right2 li {
     margin-left: 70px;
     font-size: 10px;
 }
 
-header .right .second .box-sign .bottom .right-2 li a {
+header .right .second .box-sign .bottom .right2 li a {
     font-size: 8px;
     color: black;
     text-decoration: none;
@@ -356,4 +357,85 @@ main .banner .products-categories .product-container .item .product .product-img
 main .banner .products-categories .product-container .item .product p {
     font-size: 8px;
     font-weight: 600;
+}
+
+main .deals {
+    position: relative;
+    top: 330px;
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+}
+
+main .deals .dealtop {
+    display: flex;
+    align-items: center;
+}
+
+.deals .dealtop a {
+    font-size: 9px;
+    text-decoration: none;
+    margin: 10px;
+    margin-top: 7px;
+}
+
+.deals .dealtop a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.deals .dealbottom .carousel-inner .carousel-item .dealproduct {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.deals .dealbottom .carousel-inner .carousel-item .dealproduct .prod {
+    width: 25%;
+}
+
+.deals .dealbottom .carousel-inner .carousel-item .dealproduct .img {
+    width: 100%;
+    height: 150px;
+    color: #F7F8F8;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 1px;
+    background-color: #F7F8F8;
+}
+
+.deals .dealbottom .carousel-inner .carousel-item .dealproduct .img img {
+    height: 100%;
+}
+
+.deals .dealbottom .carousel-inner .carousel-item .dealproduct .img-bottom {
+    font-size: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.deals .dealbottom .carousel-inner .carousel-item .dealproduct .img-bottom .first {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+.deals .dealbottom .carousel-inner .carousel-item .dealproduct .img-bottom .second {
+    font-weight: 500;
+    color: red;
+    text-decoration: none;
+}
+
+.deals .dealbottom .carousel-inner .carousel-item .dealproduct div {
+    font-size: 10px;
+}
+
+.deals .dealbottom .carousel button {
+    width: 25px;
+    height: 60px;
+    background-color: white;
+    margin-top: 50px;
+    color: #000;
 }
