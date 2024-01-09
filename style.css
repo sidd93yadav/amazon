@@ -790,13 +790,14 @@
                     main .sign-in {
                         position: relative;
                         top: 342px;
-                        background-color: rgb(194, 70, 70);
+                        background-color: white;
                         margin: 10px;
-                        border: 1px solid black;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        padding: 20px;
+                        padding: 15px;
+                        border-top: 1px solid rgb(139, 134, 134);
+                        border-bottom: 1px solid rgb(144, 140, 140);
                     }
                     
                     main .sign-in div span {
@@ -813,4 +814,8 @@
                     main .sign-in div a {
                         font-size: 9px;
                         text-decoration: none;
+                    }
+                    
+                    main .sign-in div .span {
+                        margin-left: 15px;
                     }
