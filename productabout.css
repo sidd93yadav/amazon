@@ -1,0 +1,23 @@
+main .details {
+    margin: 10px;
+}
+
+main .details .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .details .top div {
+    display: flex;
+}
+
+main .details .top div h5 {
+    font-size: 12px;
+}
+
+main .details .top div img {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    padding-bottom: 5px;
+}
