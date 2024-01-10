@@ -1,23 +1,302 @@
-main .details {
-    margin: 10px;
-}
-
-main .details .top {
-    display: flex;
-    justify-content: space-between;
-}
-
-main .details .top div {
-    display: flex;
-}
-
-main .details .top div h5 {
-    font-size: 12px;
-}
-
-main .details .top div img {
-    height: 20px;
-    width: 20px;
-    margin: 5px;
-    padding-bottom: 5px;
-}
+        main .details {
+            margin: 10px;
+        }
+        
+        main .details .top {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        main .details .top div {
+            display: flex;
+        }
+        
+        main .details .top div h5 {
+            font-size: 12px;
+        }
+        
+        main .details .top div img {
+            height: 20px;
+            width: 20px;
+            margin: 5px;
+            padding-bottom: 5px;
+        }
+        
+        main .start {
+            background-color: white;
+            margin: -13px 10px;
+            display: flex;
+        }
+        
+        main .start .right {
+            width: 16%;
+            background-color: white;
+            padding: 10px 13px;
+            display: inline;
+            border-right: 2px solid #EAEDED;
+            margin: 5px;
+        }
+        
+        main .start .right .headline {
+            font-size: 10px;
+            font-weight: 700;
+            margin: 0%;
+        }
+        
+        main .start .right .text {
+            font-size: 9px;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+        
+        main .start .left {
+            width: 83%;
+            padding: 10px;
+        }
+        
+        main .start .left .top {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        main .start .left .top .page p {
+            font-size: 10px;
+            font-weight: 400;
+        }
+        
+        main .start .left .top .sortby select {
+            font-size: 9px;
+            background-color: #E3E6E6;
+            box-shadow: 2px 2px 2px rgb(93, 80, 80);
+            border: none;
+        }
+        
+        main .start .left .product {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        main .start .left .products {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        main .start .left .products .item {
+            margin: 10px;
+            border: 1px solid black;
+            width: 20%;
+        }
+        
+        main .start .left .products .item .img {
+            background-color: hwb(0 95% 4% / 0.779);
+        }
+        
+        main .start .left .products .item .img img {
+            height: 200px;
+            width: 140px;
+            mix-blend-mode: multiply;
+            margin-bottom: 0;
+        }
+        
+        main .start .left .products .item .pricetag .top-t {
+            font-size: 8px;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        
+        main .start .left .products .item .stars {
+            font-size: 0;
+            padding-top: 3px;
+            display: flex;
+        }
+        
+        main .start .left .products .item .stars i {
+            color: gold;
+            font-size: 6px;
+        }
+        
+        main .start .left .products .item .stars p {
+            color: #5e5959;
+            font-size: 7px;
+            padding-left: 3px;
+            margin-top: -3px;
+            margin-bottom: 0;
+        }
+        
+        main .start .left .products .item .deal-today {
+            font-size: 12px;
+            margin: 1px;
+        }
+        
+        main .start .left .products .item .deal-today p {
+            font-size: 7px;
+            color: white;
+            margin-bottom: 0;
+            background-color: red;
+            width: 57px;
+            font-weight: 500;
+            border-radius: 1.5px;
+            padding: 2px 2px;
+        }
+        
+        main .start .left .products .item .off {
+            display: flex;
+            margin-bottom: 0;
+        }
+        
+        main .start .left .products .item .off p {
+            margin-bottom: 0;
+        }
+        
+        main .start .left .products .item .off .pricetag {
+            font-size: 12px;
+            font-weight: 300;
+            color: red;
+        }
+        
+        main .start .left .products .item .off .p-tag {
+            font-size: 8px;
+            font-weight: 600;
+            padding-right: 1px;
+            padding-left: 2px;
+            padding-top: 2px;
+        }
+        
+        main .start .left .products .item .off .price-nu {
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        main .start .left .products .item .off .zero {
+            font-size: 8px;
+            font-weight: 400;
+            padding-top: 2px;
+        }
+        
+        main .start .left .products .item .off .bracet {
+            font-size: 9px;
+            padding-left: 2px;
+            padding-top: 2px;
+        }
+        
+        main .start .left .products .item .mrf {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        
+        main .start .left .products .item .mrf p {
+            font-size: 9px;
+            margin-bottom: 0;
+        }
+        
+        main .start .left .products .item .mrf .b-mrf {
+            text-decoration: line-through;
+            margin-bottom: 0;
+        }
+        
+        main .start .left .products .item .logo {
+            display: flex;
+        }
+        
+        main .start .left .products .item .logo .left-logo {
+            background-color: #3E4650;
+            display: flex;
+        }
+        
+        main .start .left .products .item .logo .left-logo i {
+            font-size: 8px;
+            margin-bottom: 0;
+            padding-top: 4px;
+        }
+        
+        main .start .left .products .item .logo .left-logo p {
+            font-size: 10px;
+            color: white;
+            margin-bottom: 0;
+            font-weight: 300;
+            margin-top: 0;
+            padding-left: 3px;
+        }
+        
+        main .start .left .products .item .logo .freedelivery {
+            display: flex;
+        }
+        
+        main .start .left .products .item .logo .freedelivery .free-d {
+            font-size: 9px;
+            font-weight: 500;
+            color: #545658;
+            margin-bottom: 0%;
+            width: 60px;
+            margin-left: 3px;
+        }
+        
+        main .start .left .products .item .logo .detail-b {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0%;
+        }
+        
+        main .start .left .products .item .logo .detail-b .d-tail {
+            font-size: 8px;
+            color: rgb(100, 163, 219);
+            margin-bottom: 0%;
+        }
+        /* bottom button */
+        
+        main .start .left .bottom-btn {
+            border-top: 2px solid #bec1c1;
+            padding: 40px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        main .start .left .bottom-btn button {
+            border: 1px solid rgb(42, 43, 44);
+            margin: 2px;
+            font-size: 10px;
+            font-weight: 400;
+            border-radius: 4px;
+            padding: 3px 10px;
+        }
+        
+        main .start .left .bottom-btn button:hover {
+            background-color: rgb(204, 224, 235);
+        }
+        
+        main .start .left .bottom-btn button i {
+            font-size: 8px;
+            padding: 2px;
+        }
+        
+        main .bottom-deal {
+            background-color: #FAFAFA;
+            margin: 30px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        
+        main .bottom-deal div {
+            display: flex;
+        }
+        
+        main .bottom-deal p {
+            font-weight: 600;
+        }
+        
+        main .bottom-deal div p:hover {
+            text-decoration: underline 1px rgb(74, 30, 30);
+        }
+        
+        main .bottom-deal i {
+            padding-top: 7px;
+            font-size: 13px;
+            padding-left: 5px;
+        }
